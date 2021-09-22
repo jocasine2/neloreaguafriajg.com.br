@@ -1,4 +1,5 @@
 <?php
+
   session_start();//tem que ser sempre no inicio
   ob_start();
 
