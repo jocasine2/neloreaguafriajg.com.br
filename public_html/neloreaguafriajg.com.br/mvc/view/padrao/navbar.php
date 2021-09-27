@@ -55,7 +55,7 @@
         <li><a  href="historia">HISTÓRIA</a></li>
         <li><a  href="leiloes">LEILÕES</a></li>
         <li><a  href="selecao">SELEÇÃO</a></li>
-        <li><a  href="touros">TOUROS</a></li>
+        <li><a  href="touros">TOUROS DE CENTRAL</a></li>
         <li><a  href="doadoras">DOADORAS</a></li>
         <li><a  href="galeria">GALERIA DE FOTOS</a></li>
         <li><a  href="contato">CONTATO</a></li>
