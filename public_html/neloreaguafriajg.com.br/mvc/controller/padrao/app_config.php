@@ -1,4 +1,10 @@
 <?php
+if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+	$uri = 'https://';
+} else {
+	$uri = 'http://';
+}
+
 //produção
 	// $base = 'http://www.neloreaguafriajg.com.br/';
 	// $bd_usuario = "favos925_nelore";
