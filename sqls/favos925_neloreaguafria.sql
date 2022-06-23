@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 22-Set-2021 às 09:55
+-- Tempo de geração: 23-Jun-2022 às 11:43
 -- Versão do servidor: 5.6.41-84.1
--- versão do PHP: 7.3.28
+-- versão do PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -67,7 +67,13 @@ INSERT INTO `acnp` (`id_acnp`, `id_info_touro`, `mgte`, `top_mgte`, `mp120`, `to
 (1, 1, 15.41, 2, 2.98, 5, 10.61, 2, 22.91, 0.1, 27.18, 0.1, 0.79, 3, 0.95, 4, 0, 0, -0.64, 18, 51.9, 60, 49.25, 60, 0.24, 30, 0, 30),
 (2, 2, 15.22, 2, 1.87, 19, 5.57, 5, 22.22, 0.5, 27.02, 0.1, 0.34, 16, 0.29, 25, -0.35, 17, -0.45, 35, 54.65, 30, 50, 40, -0.09, 45, -0.14, 80),
 (3, 3, 20.53, 0.5, 3.19, 6, 11.49, 33, 32.18, 2, 26.77, 0.5, 0.98, 2, 1.43, 2, -1.24, 3, -0.88, 8, 61.25, 4, 56.8, 4, 2.05, 4, 0.28, 4),
-(4, 4, 0, 0, 2, 14, 0, 0, 0, 0, 25, 2, 0, 11, 1, 8, 0, 0, 0, 16, 85, 1, 74, 9, 4, 0, 0, 15);
+(4, 4, 0, 0, 2, 14, 0, 0, 0, 0, 25, 2, 0, 11, 1, 8, 0, 0, 0, 16, 85, 1, 74, 9, 4, 0, 0, 15),
+(7, 6, 26.88, 1, 4.96, 0.5, 12.95, 3, 27.42, 1, 28.14, 1, 1.02, 6, 0.65, 19, 1.86, 89, -1.03, 5, 83.25, 5, 79.35, 5, 0, 0, 1.07, 0.1),
+(8, 7, 33.33, 0.1, 5.77, 0.5, 15.82, 1, 33.28, 0.1, 35.44, 0.1, 1.86, 0.5, 2.26, 0.5, -0.68, 11, -1.1, 3, 88.37, 1, 85.03, 1, 0, 0, 0.57, 2),
+(9, 8, 29.33, 0.5, 3.75, 3, 16.47, 1, 32.91, 0.5, 34.25, 0.5, 1.25, 3, 1.75, 2, 1.08, 71, -1.26, 1, 82.61, 6, 78.51, 6, 0, 0, -0.08, 58),
+(10, 10, 26.26, 2, 5.14, 0.5, 9.02, 11, 19.48, 6, 21.9, 5, 1.69, 0.5, 1.66, 2, -0.59, 12, -1.15, 3, 89.65, 1, 79.77, 4, 0, 0, 0.96, 0.1),
+(11, 5, 31.81, 0.1, -1.3, 95, 25.08, 0.1, 39.67, 0.1, 40.16, 0.1, 1.1, 5, 0.85, 13, 2.85, 98, -0.79, 17, 86.01, 3, 65.2, 49, 0, 0, -0.24, 88),
+(12, 9, 29.5, 0.5, 3.07, 7, 17.5, 0.5, 32.28, 0.5, 36.54, 0.1, 1.07, 5, 1.21, 6, 0.99, 68, -1.09, 4, 82.76, 6, 71.38, 23, 0, 0, 0.37, 4);
 
 -- --------------------------------------------------------
 
@@ -132,7 +138,13 @@ INSERT INTO `info_touro` (`id_info_touro`, `id_touros`, `nome_touro`, `rgd`, `ra
 (1, 1, 'TURBO ÁGUA FRIA', 'JCGG 4227', 'Nelore', '2012-08-04', 'http://www.altagenetics.com.br/Busca/Touro/12615', 'assets/imagens/enviados/2016819192828.png', 'Alta Genetics'),
 (2, 2, 'COMENDADOR DA ÁGUA FRIA', 'JCGG 4345', 'Nelore', '2012-08-13', 'http://www.abspecplan.com.br/comendador', 'assets/imagens/enviados/2016819192843.png', 'ABS Pecplan'),
 (3, 3, 'TITANIO DA AGUA FRIA', 'JCGG 9251', 'Nelore', '2016-08-30', 'https://www.abspecplan.com.br/?pages=bull&id=2029', 'assets/imagens/enviados/titanio_da_agua_fria_baixa2.jpg', 'ABS Pecplan'),
-(4, 4, 'ABSOLUTO DA ÁGUA FRIA', 'JCGG 8247', 'NELORE', '2015-10-03', 'https://www2.crvlagoa.com.br/TourosPagina.aspx?idTipoRaca=15&idAnimal=2626#.XxXxTjdKhuR', 'assets/imagens/enviados/absoluto_aguafria_jg.jpeg', 'CRV Lagoa');
+(4, 4, 'ABSOLUTO DA ÁGUA FRIA', 'JCGG 8247', 'Nelore', '2015-10-03', 'https://www2.crvlagoa.com.br/TourosPagina.aspx?idTipoRaca=15&idAnimal=2626#.XxXxTjdKhuR', 'assets/imagens/enviados/absoluto_aguafria_jg.jpeg', 'CRV Lagoa'),
+(5, 5, 'BEIRUTE DA AGUA FRIA', '', 'Nelore', '2018-09-29', '', 'assets/imagens/enviados/beirute.jpeg', 'Alta Genetics'),
+(6, 6, 'CAMAROTE DA AGUA FRIA', '', 'Nelore', '2019-11-15', 'https://touros.altagenetics.com.br/Busca/Touro/36236', 'assets/imagens/enviados/camarote.jpeg', 'Alta Genetics'),
+(7, 7, 'CAPITAO DA AGUA FRIA', '', 'Nelore', '2019-11-14', '', 'assets/imagens/enviados/capitao.jpeg', 'ABS Pecplan'),
+(8, 8, 'CENARIO DA AGUA FRIA', '', 'Nelore', '2019-10-12', '', 'assets/imagens/enviados/cenario.jpeg', 'Alta Genetics'),
+(9, 9, 'COMANDO DA AGUA FRIA', '', 'Nelore', '2019-10-12', '', 'assets/imagens/enviados/comando.jpeg', 'ABS Pecplan'),
+(10, 10, 'CONNOR DA AGUA FRIA', '', 'Nelore', '2012-08-04', '', 'assets/imagens/enviados/connor.jpeg', 'Genex');
 
 -- --------------------------------------------------------
 
@@ -177,7 +189,19 @@ INSERT INTO `pedigree` (`id_pedigree`, `id_info_touro`, `nome_pedigree`) VALUES
 (5, 3, 'Rem Usp (REM 5531)'),
 (6, 3, 'JG-1991 da Agua Fria (JCGG 1991)'),
 (7, 4, 'Bitelo DS'),
-(8, 4, 'JA - 1997 DA ÁGUA FRIA');
+(8, 4, 'JA - 1997 DA ÁGUA FRIA'),
+(9, 5, 'REM DHEEF'),
+(10, 5, 'JG-5373 DA AGUA FRIA'),
+(11, 6, 'D4685 DA MN (CAMPEÃO)'),
+(12, 6, 'JG-5971 DA AGUA FRIA'),
+(13, 7, 'REM USP'),
+(14, 7, 'JG-7036 DA AGUA FRIA'),
+(15, 8, 'TITANIO DA AGUA FRIA'),
+(16, 8, 'JG-9600 DA AGUA FRIA'),
+(17, 10, 'ZAPP BEABISA'),
+(18, 10, 'JG-8975 DA AGUA FRIA'),
+(19, 9, 'TITANIO DA AGUA FRIA'),
+(20, 9, 'JG-5373 DA AGUA FRIA');
 
 -- --------------------------------------------------------
 
@@ -230,7 +254,13 @@ INSERT INTO `pmgz` (`id_pmgz`, `id_info_touro`, `iabcz`, `top_iabcz`, `pm_em`, `
 (1, 1, 28.66, 0.1, 1.58, 14, 12.15, 0.1, 8.17, 0.5, 17.66, 0.1, 50.83, 0.1, 10.03, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0.44, 22, 0, 0, 0, 0, 0, 0, 0, 0),
 (2, 2, 16.11, 5, 1.54, 15, 8.06, 2, 5.75, 4, 11.34, 2, 21.12, 6, -0.13, 41, 1.47, 6, 0.68, 20, 0.26, 24, 9.37, 3, 0.41, 54, 0.22, 17, 0.16, 28, -0.1, 81, -0.13, 95),
 (3, 3, 29, 1, 2.7, 2, 9.64, 1, 8.72, 1, 24.41, 1, 14.77, 1, -19.39, 3, 2.2, 1, 6.53, 1, 5.06, 1, 16.1, 1, 38.9, 2, 0.73, 1, 1.51, 1, 2.62, 1, -0.04, 50),
-(4, 4, 0, 0, 0, 0, 7, 26, 5, 0, 19, 26, 0, 0, -14, 19, 0, 0, 0, 0, 0, 0, 13, 26, 39, 18, 0, 20, 0, 21, 3, 23, 0, 20);
+(4, 4, 0, 0, 0, 0, 7, 26, 5, 0, 19, 26, 0, 0, -14, 19, 0, 0, 0, 0, 0, 0, 13, 26, 39, 18, 0, 20, 0, 21, 3, 23, 0, 20),
+(6, 7, 0, 0, 5.21, 1, 7.79, 1, 9.94, 1, 21.89, 1, 0, 0, -28.95, 1, 0, 0, 0, 0, 0, 0, 15.02, 1, 41.87, 1, 0.948, 1, 1.615, 1, 1.947, 1, 0.827, 2),
+(7, 8, 0, 0, 4.11, 1, 11.69, 1, 11.52, 1, 27.46, 1, 0, 0, -17.09, 1, 0, 0, 0, 0, 0, 0, 21.57, 1, 37.5, 1, 0.629, 1, 1.272, 1, 2.146, 1, 0.124, 5),
+(8, 5, 0, 0, -2.05, 10, 16.84, 1, 6.73, 1, 34.2, 1, 0, 0, -8.69, 3, 0, 0, 0, 0, 0, 0, 27.72, 1, 35.6, 1, 1.189, 1, 1.013, 1, 4.041, 1, -1.664, 10),
+(9, 9, 0, 0, 3.08, 1, 10.7, 1, 9.09, 1, 23.89, 1, 0, 0, -19.12, 1, 0, 0, 0, 0, 0, 0, 17.49, 1, 39.57, 1, 1.033, 1, 1.703, 1, 2.737, 1, -0.53, 8),
+(10, 10, 0, 0, 4.2, 1, 6.43, 1, 9.03, 1, 19.95, 1, 0, 0, -28.5, 1, 0, 0, 0, 0, 0, 0, 10.97, 1, 40.98, 1, 1.27, 1, 1.67, 1, 3.222, 1, 2.998, 1),
+(11, 6, 0, 0, 4.23, 1, 9.9, 1, 10.32, 1, 23.02, 1, 0, 0, -17.92, 1, 0, 0, 0, 0, 0, 0, 17.84, 1, 37.52, 1, 0.683, 1, 0.951, 1, 3.578, 1, 3.017, 1);
 
 -- --------------------------------------------------------
 
@@ -264,7 +294,31 @@ INSERT INTO `sub_pedigree` (`id_sub_pedigree`, `id_pedigree`, `nome_sub_pedigree
 (13, 7, 'Encarte DS (DWS 6494)'),
 (14, 7, 'Dacia DS (EE 2391)'),
 (15, 8, 'Backup (AAP 1653)'),
-(16, 8, 'Farpada (BD 8723)');
+(16, 8, 'Farpada (BD 8723)'),
+(17, 9, 'REM ARMADOR'),
+(18, 9, 'REM ULICIA'),
+(19, 10, 'BERLOQUE DA BONS'),
+(20, 10, 'JG-1200 DA AGUA FRIA'),
+(21, 11, 'D1484 DA MN (HUNO)'),
+(22, 11, 'D1342 DA MN'),
+(23, 12, 'PLAYBOY MAT.'),
+(24, 12, 'JG-1013 DA AGUA FRIA'),
+(25, 13, 'REM QUISCO'),
+(26, 13, 'REM REGIS'),
+(27, 14, 'BACKUP'),
+(28, 14, 'JA-2967 DA AGUA FRIA'),
+(29, 15, 'REM USP'),
+(30, 15, 'JG-1991 DA AGUA FRIA'),
+(31, 16, '1713 DA LACADA'),
+(32, 16, 'JG-5859 DA AGUA FRIA'),
+(33, 17, 'REM ARMADOR'),
+(34, 17, 'RIENA DA BEABISA'),
+(35, 18, 'D4685 DA MN (CAMPEÃO)'),
+(36, 18, 'FACILA DA AGUA FRIA'),
+(37, 19, 'REM USP'),
+(38, 19, 'JG-1991 DA AGUA FRIA'),
+(39, 20, 'BERLOQUE DA BONS'),
+(40, 20, 'JG-1200 DA AGUA FRIA');
 
 -- --------------------------------------------------------
 
@@ -275,18 +329,25 @@ INSERT INTO `sub_pedigree` (`id_sub_pedigree`, `id_pedigree`, `nome_sub_pedigree
 CREATE TABLE `touros` (
   `id_touros` mediumint(9) NOT NULL,
   `nome_touro` text NOT NULL,
-  `link_img_miniatura` varchar(255) NOT NULL
+  `link_img_miniatura` varchar(255) NOT NULL,
+  `id_centrais` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `touros`
 --
 
-INSERT INTO `touros` (`id_touros`, `nome_touro`, `link_img_miniatura`) VALUES
-(1, 'TURBO ÁGUA FRIA', 'assets/imagens/enviados/p201682311451.jpg'),
-(2, 'COMENDADOR DA ÁGUA FRIA', 'assets/imagens/enviados/p201682311544.jpg'),
-(3, 'TITÂNIO DA AGUA FRIA', 'assets/imagens/enviados/titanio_da_agua_fria_baixa2.jpg'),
-(4, 'ABSOLUTO DA ÁGUA FRIA', 'assets/imagens/enviados/absoluto_aguafria_jg.jpeg');
+INSERT INTO `touros` (`id_touros`, `nome_touro`, `link_img_miniatura`, `id_centrais`) VALUES
+(1, 'TURBO ÁGUA FRIA', 'assets/imagens/enviados/p201682311451.jpg', 1),
+(2, 'COMENDADOR DA ÁGUA FRIA', 'assets/imagens/enviados/p201682311544.jpg', 2),
+(3, 'TITÂNIO DA AGUA FRIA', 'assets/imagens/enviados/titanio_da_agua_fria_baixa2.jpg', 2),
+(4, 'ABSOLUTO DA ÁGUA FRIA', 'assets/imagens/enviados/absoluto_aguafria_jg.jpeg', 3),
+(5, 'BEIRUTE DA ÁGUA FRIA', 'assets/imagens/enviados/beirute.jpeg', 1),
+(6, 'CAMAROTE DA ÁGUA FRIA', 'assets/imagens/enviados/camarote.jpeg', 1),
+(7, 'CAPITÃO DA ÁGUA FRIA', 'assets/imagens/enviados/capitao.jpeg', 2),
+(8, 'CENÁRIO DA ÁGUA FRIA', 'assets/imagens/enviados/cenario.jpeg', 1),
+(9, 'COMANDO DA AGUA FRIA', 'assets/imagens/enviados/comando.jpeg', 2),
+(10, 'CONNOR DA ÁGUA FRIA', 'assets/imagens/enviados/connor.jpeg', 4);
 
 -- --------------------------------------------------------
 
@@ -317,7 +378,8 @@ INSERT INTO `videos` (`id_videos`, `data_postagem`, `titulo`, `descricao`, `link
 (6, '2018-07-16', 'VT leilão Nelore Agua Fria 2018', 'Leilão Nelore Água Fria João Guimarães oferece o melhor da genética nelore\r\nem 400 touros PO com 100% de registro definitivo e avaliação de carcaça.\r\nSão grandes raçadores para elevar a produtividade do seu criatório,\r\nconsulte nosso frete facilitado. Dia 25 de agosto, sábado as 13 Horas no \r\nDantas Leilões em Xinguara, transmissão terra viva.', 'assets/videos/leilao_2018.mp4', 'assets/imagens/miniaturas_videos/leilao_2018.jpg', 0),
 (7, '2018-08-19', 'Nelore Agua Fria', 'Quase meio século de seleção desbravando todos os desafios do sul do Pará, localizado em Xinguara o Nelore Água Fria desde o início de sua seleção trabalha em busca de eficiência e resultados para isso, a cada safra, importantes características são incorporadas no rebanho sempre com o suporte dos principais programas de melhoramento genético do país uma forma de garantir mais confiabilidade a genética que oferecem ao mercado.', 'assets/videos/prop_1-2018.mp4', 'assets/imagens/miniaturas_videos/ban_2018.jpg', 1),
 (8, '2018-11-12', 'Leilão 17/11/2018', 'O leilão Nelore Água Fria coloca a venda 5000 bezerros de corte de convidados e 100 touros nelore PO com registro definitivo e avaliação de carcaça, dia 17 de novembro ao meio dia o remate será transmitido pelo canal terra viva direto do parque de exposições de marabá, a mesa operadora é da Estância Bahia produções.', 'assets/videos/leilao_2018-2.mp4', '	\r\nassets/imagens/miniaturas_videos/baner_leilao_2-2018.jpg', 0),
-(9, '2019-08-03', 'Leilão 24/08/2019', 'Leilão Nelore Água fria oferece o melhor da genética em 400 touros PO 100%\r\ncom avaliação de carcaça e duplamente avaliados pela ANCP e PMGZ criados, selecionados e preparados para o leilão a pasto, estes raçadores são o caminho mais curto apara aumentar sua lucratividade. Estamos te esperando em nossos pontos de apoio. Dia 24 de agosto sábado as 12:00 no Tatersal Joel Lobato, Sindicato Rural de Xinguara, transmissão: Canal Rural.', 'assets/videos/leilao_nelore_aguafria_jg_2019.mp4', 'assets/imagens/miniaturas_videos/miniatura_nelore_aguafria_2019.png', 0);
+(9, '2019-08-03', 'Leilão 24/08/2019', 'Leilão Nelore Água fria oferece o melhor da genética em 400 touros PO 100%\r\ncom avaliação de carcaça e duplamente avaliados pela ANCP e PMGZ criados, selecionados e preparados para o leilão a pasto, estes raçadores são o caminho mais curto apara aumentar sua lucratividade. Estamos te esperando em nossos pontos de apoio. Dia 24 de agosto sábado as 12:00 no Tatersal Joel Lobato, Sindicato Rural de Xinguara, transmissão: Canal Rural.', 'assets/videos/leilao_nelore_aguafria_jg_2019.mp4', 'assets/imagens/miniaturas_videos/miniatura_nelore_aguafria_2019.png', 0),
+(10, '2022-03-27', 'Conhecendo a Fazenda Nelore Água Fria', 'Conheçam uma fazenda que mescla pecuária comercial e seleção de Nelore para produzir em alta escala na região amazônica. No vídeo você virá desde a produção de novilhas super-precoces até o uso da integração Lavoura-Pecuária, seleção de touros Nelore e confinamento de gado de corte. Oportunidade ímpar para conhecer uma nova pecuária que se consolida no bioma Amazônia aliando produção de proteína animal com conservação ambiental e biodiversidade.', 'assets/videos/bate_papo_com_nelore_aguafria.mp4', 'assets/imagens/logo_agua_fria.svg', 1);
 
 -- --------------------------------------------------------
 
@@ -419,7 +481,13 @@ INSERT INTO `videos_touros` (`id_videos_touros`, `id_touros`, `link_videos_touro
 (0, 2, 'https://www.youtube.com/embed/vOHNSwc67oA', 'assets/imagens/enviados/p2016823164352.jpg'),
 (1, 1, 'https://www.youtube.com/embed/waqXca-Jegs', 'assets/imagens/enviados/p201682311451.jpg'),
 (3, 3, 'assets/videos/videos_touros/3/titanio_agua_fria_2.mp4', 'assets/imagens/enviados/titanio_da_agua_fria_baixa2.jpg'),
-(4, 4, 'assets/videos/videos_touros/4/absoluto_agua_fria_video.mp4', 'assets/imagens/enviados/absoluto_aguafria_jg.jpeg');
+(4, 4, 'assets/videos/videos_touros/4/absoluto_agua_fria_video.mp4', 'assets/imagens/enviados/absoluto_aguafria_jg.jpeg'),
+(5, 5, 'assets/videos/videos_touros/5/video_beirute.mp4', 'assets/imagens/enviados/beirute.jpeg'),
+(6, 6, 'assets/videos/videos_touros/6/video_camarote.mp4', 'assets/imagens/enviados/camarote.jpeg'),
+(7, 7, 'assets/videos/videos_touros/7/video_capitao.mp4', 'assets/imagens/enviados/capitao.jpeg'),
+(8, 8, 'assets/videos/videos_touros/8/video_cenario.mp4', 'assets/imagens/enviados/cenario.jpeg'),
+(9, 9, 'assets/videos/videos_touros/9/video_comando.mp4', 'assets/imagens/enviados/comando.jpeg'),
+(10, 10, 'assets/videos/videos_touros/10/video_connor.mp4', 'assets/imagens/enviados/connor.jpeg');
 
 --
 -- Índices para tabelas despejadas
@@ -501,7 +569,7 @@ ALTER TABLE `videos_touros`
 -- AUTO_INCREMENT de tabela `acnp`
 --
 ALTER TABLE `acnp`
-  MODIFY `id_acnp` float NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_acnp` float NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de tabela `fotos`
@@ -513,7 +581,7 @@ ALTER TABLE `fotos`
 -- AUTO_INCREMENT de tabela `info_touro`
 --
 ALTER TABLE `info_touro`
-  MODIFY `id_info_touro` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_info_touro` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `leiloes`
@@ -525,31 +593,31 @@ ALTER TABLE `leiloes`
 -- AUTO_INCREMENT de tabela `pedigree`
 --
 ALTER TABLE `pedigree`
-  MODIFY `id_pedigree` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_pedigree` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de tabela `pmgz`
 --
 ALTER TABLE `pmgz`
-  MODIFY `id_pmgz` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_pmgz` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `sub_pedigree`
 --
 ALTER TABLE `sub_pedigree`
-  MODIFY `id_sub_pedigree` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_sub_pedigree` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT de tabela `touros`
 --
 ALTER TABLE `touros`
-  MODIFY `id_touros` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_touros` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id_videos` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_videos` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `videos_leiloes`
